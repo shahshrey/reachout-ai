@@ -32,7 +32,7 @@ ReachOut AI is a sophisticated tool that leverages AI capabilities to generate p
 |                                       |                                                               |
 | ------------------------------------- | ------------------------------------------------------------- |
 | ✉️ **Personalized Email Generation**  | Tailored emails for various purposes and industries           |
-| 🤖 **Integration with OpenAI**        | Leverages OpenAI's language models                            |
+| 🤖 **Integration with Groq**        | Leverages Groq's language models                            |
 | 📄 **PDF Content Analysis**           | Extracts and utilizes content from uploaded PDF documents     |
 | 📊 **Performance Metrics**            | Tracks email generation and response rates                    |
 | 🖥️ **Streamlit-based UI**             | User-friendly interface for seamless interaction              |
