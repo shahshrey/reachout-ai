@@ -1,0 +1,7 @@
+
+langchain_core
+langchain_openai
+rich
+python-dotenv
+streamlit
+PyPDF2
