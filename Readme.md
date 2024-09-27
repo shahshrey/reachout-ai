@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/shreyshahh/reachout-ai">
+  <a href="https://github.com/shahshrey/reachout-ai">
     <img src="https://github.com/shahshrey/reachout-ai/blob/master/assets/logo.webp" style="max-width: 500px" width="50%" alt="Logo">
   </a>
 </div>
@@ -11,7 +11,7 @@
 <br />
 
 <div align="center">
-  <a href="https://github.com/shreyshahh/reachout-ai/commits">
+  <a href="https://github.com/shahshrey/reachout-ai/commits">
     <img src="https://img.shields.io/github/commit-activity/m/shahshrey/reachout-ai" alt="git commit activity">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg?&color=3670A0" alt="License: MIT">
   </a>
