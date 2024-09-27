@@ -18,9 +18,17 @@ import json
 
 # Load environment variables
 load_dotenv()
+from langchain_groq import ChatGroq
+
+# Initialize the Groq model
+AI_MODEL = ChatGroq(
+    model="llama3-groq-70b-8192-tool-use-preview",
+    temperature=0,
+    base_url="https://api.groq.com/"
+)
 
 # Configurable variables
-AI_MODEL = ChatOpenAI(model_name="gpt-4o")
+# AI_MODEL = ChatOpenAI(model_name="gpt-4o")
 SMTP_SERVER = os.getenv("SMTP_SERVER")
 SMTP_PORT = os.getenv("SMTP_PORT")
 SENDER_EMAIL = os.getenv("SENDER_EMAIL")
@@ -325,6 +333,7 @@ def display_generate_page():
         }
         try:
             generated_email = generate_email(email_info)
+            print(generated_email)
             st.session_state.generated_email = generated_email
             
             # Save email data
@@ -346,7 +355,7 @@ def display_generate_page():
             # Display the generated email content
             st.subheader("Generated Email Content")
             st.text_input("Email Subject", generated_email.subject, disabled=False)
-            st.text_area("Email Body", f"{generated_email.body}", height=300, disabled=False)
+            st.text_area("Email Body", generated_email.body.replace("\\n", "\n"), height=300, disabled=False)
         
         except Exception as e:
             st.error(f"An error occurred during email generation: {str(e)}")
@@ -362,14 +371,14 @@ def display_send_page():
     recipient_email = st.text_input("Recipient's Email Address")
     
     st.subheader("Final Email Preview")
-    email_content = st.session_state.get('generated_email')
-    if email_content:
-        st.text_input("Email Subject", email_content.subject, disabled=False)
-        st.text_area("Email Body", f"{email_content.body}", height=300, disabled=False)
+    generated_email = st.session_state.get('generated_email')
+    if generated_email:
+        st.text_input("Email Subject", generated_email.subject, disabled=False)
+        st.text_area("Email Body", generated_email.body.replace("\\n", "\n"), height=300, disabled=False)
     else:
         st.warning("No email has been generated yet. Please return to the previous step and generate an email.")
     if st.button("Send Email"):
-        if send_email(recipient_email, email_content):
+        if send_email(recipient_email, generated_email):
             st.success("Email sent successfully!")
             # Update email data
             update_email_data(recipient_email, sent=True)
