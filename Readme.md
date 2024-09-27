@@ -17,9 +17,8 @@
   </a>
 </div>
 <p align="center">
-<a href="https://github.com/shreyshahh/reachout-ai">🖇️ Repository</a>
+<a href="https://github.com/shahshrey/reachout-ai/tree/master">🖇️ Repository</a>
 <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-<a href="https://github.com/shreyshahh/reachout-ai/blob/master/docs/doc.md">📙 Documentation</a>
 </p>
 
 <br/>
