@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/shreyshahh/reachout-ai">
-    <img src="docs/images/logo.png" style="max-width: 500px" width="50%" alt="Logo">
+    <img src="https://github.com/shahshrey/reachout-ai/blob/master/assets/logo.webp" style="max-width: 500px" width="50%" alt="Logo">
   </a>
 </div>
 
