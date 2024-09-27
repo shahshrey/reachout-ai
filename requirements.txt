@@ -5,3 +5,4 @@ rich
 python-dotenv
 streamlit
 PyPDF2
+langchain_community
