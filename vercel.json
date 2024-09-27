@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/main.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/main.py"
+    }
+  ],
+  "env": {
+    "SMTP_SERVER": "@smtp_server",
+    "SMTP_PORT": "@smtp_port",
+    "SENDER_EMAIL": "@sender_email",
+    "SENDER_PASSWORD": "@sender_password"
+  }
+}
