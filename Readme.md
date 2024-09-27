@@ -12,7 +12,7 @@
 
 <div align="center">
   <a href="https://github.com/shreyshahh/reachout-ai/commits">
-    <img src="https://img.shields.io/github/commit-activity/m/shreyshahh/reachout-ai" alt="git commit activity">
+    <img src="https://img.shields.io/github/commit-activity/m/shahshrey/reachout-ai" alt="git commit activity">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg?&color=3670A0" alt="License: MIT">
   </a>
 </div>
