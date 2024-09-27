@@ -395,7 +395,8 @@ def send_email(to_email, email_content):
         message["From"] = SENDER_EMAIL
         message["To"] = to_email
         message["Subject"] = email_content.subject
-        body = f"{email_content.body}"
+        content = email_content.body.replace("\\n", "\n")
+        body = f"{content}"
         message.attach(MIMEText(body, "plain"))
 
         with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
