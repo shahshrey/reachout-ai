@@ -25,18 +25,21 @@
 
 # ✉️ ReachOut AI
 
-ReachOut AI is a sophisticated tool that leverages AI capabilities to generate personalized cold outreach emails. It integrates with OpenAI's language models to craft emails tailored to specific industries, roles, and purposes, ensuring high engagement and response rates.
+ReachOut AI is a sophisticated tool that leverages AI capabilities to generate personalized cold outreach emails. It integrates with Groq's language models to craft emails tailored to specific industries, roles, and purposes, ensuring high engagement and response rates.
 
 ## 🌟 Features
 
-|                                       |                                                               |
-| ------------------------------------- | ------------------------------------------------------------- |
-| ✉️ **Personalized Email Generation**  | Tailored emails for various purposes and industries           |
-| 🤖 **Integration with OpenAI**        | Leverages OpenAI's language models                            |
-| 📄 **PDF Content Analysis**           | Extracts and utilizes content from uploaded PDF documents     |
-| 📊 **Performance Metrics**            | Tracks email generation and response rates                    |
-| 🖥️ **Streamlit-based UI**             | User-friendly interface for seamless interaction              |
-| ⚙️ **Customizable Email Templates**   | Predefined templates for different email types                |
+- 🤖 **AI-Powered Email Generation**: Utilizes Groq's LLaMA 3 model for creating highly personalized emails
+- 📊 **User Registration**: Collects user information for personalized email creation
+- 🎯 **Email Personalization**: Allows users to input recipient details and specific information
+- 📄 **Document Upload**: Supports PDF upload for additional context in email generation
+- ✉️ **Multiple Email Types**: Supports various email categories (e.g., Sales Pitch, Networking Introduction)
+- 📝 **Email Preview and Editing**: Allows users to review and edit generated emails
+- 📨 **Email Sending Functionality**: Integrated email sending capability
+- 📊 **Performance Tracking**: Tracks email generation, sending, and response rates
+- 🎨 **Custom UI**: Streamlit-based user interface with custom theming
+- 🔒 **Secure Configuration**: Uses environment variables for sensitive information
+- 📈 **CSV Data Storage**: Stores email data for analysis and tracking
 
 ## 🚀 Quick Start ⌨️
 
@@ -63,7 +66,7 @@ ReachOut AI is a sophisticated tool that leverages AI capabilities to generate p
 
 5. Run the Streamlit app:
    ```bash
-   streamlit run cold_email.py
+   streamlit run src/cold_email.py
    ```
 
 6. Open your web browser and navigate to the URL provided by Streamlit (usually http://localhost:8501)
@@ -73,9 +76,9 @@ ReachOut AI is a sophisticated tool that leverages AI capabilities to generate p
 ## 🗂️ Project Structure
 
 - `src/`: Contains the main application code
+  - `cold_email.py`: The main application file
 - `tests/`: Contains test files (to be implemented)
 - `docs/`: Contains additional documentation
-- `cold_email.py`: The entry point of the application
 - `requirements.txt`: Lists all Python dependencies
 - `.env.example`: Template for environment variables
 
